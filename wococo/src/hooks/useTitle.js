@@ -7,7 +7,7 @@ function useTitle(initialTitle) {
         document.title = title;
 
         return () => {
-            document.title = initialTitle; // Reset to initial title on unmount
+            document.title = initialTitle;
         };
     }, [title]);
 
