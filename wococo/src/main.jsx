@@ -7,6 +7,7 @@ import MainContent from './components/Page/MainContent/MainContent.jsx';
 import Root from './components/Root.jsx';
 import SingIn from './components/Page/auth/SingIn/SingIn.jsx';
 import Register from './components/Page/auth/Register/Register.jsx';
+import ErrorPage from './components/layouts/ErrorPage/ErrorPage.jsx';
 
 
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <MainContent />
+      },
+      {
+        path: "*",
+        element: <ErrorPage />
       },
       {
         path: "/singIn",
