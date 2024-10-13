@@ -11,6 +11,21 @@ a {
 }
 
 
+
+.UserNavbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.userIcon {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
 .navigationContent ul{
     display: flex;
     flex-direction: row;
